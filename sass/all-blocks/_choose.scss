@@ -1,0 +1,229 @@
+.choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 557px;
+    padding-top: 100px;
+    background-color: $primary_color;
+    border-radius: 10px;
+    &__title {
+        font-family: $header_font_title;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        max-width: 329px;
+        margin-bottom: 32px;
+        color: $white_color;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 540px;
+        text-align: center;
+        color: $white_color;
+        margin-bottom: 24px;
+        @include for-mobile {
+            margin-bottom: 24px;
+        }
+    }
+    &__box {
+        position: absolute;
+        top: 300px;
+        text-align: center;
+        background-color: $secondary_color;
+        color: $white_color;
+        padding: 72px 48px 48px 48px;
+        border-radius: 8px;
+        left: 100px;
+        &__image {
+            @include for-mobile {
+                margin-bottom: 56px;
+            }
+        }
+        &__title {
+            font-family: $header_font_title;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+            margin: 56px 0 24px 0;
+            @include for-tablet {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0 0 16px 0;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 540px;
+            text-align: center;
+            color: $white_color;
+            max-width: 255px;
+            @include for-tablet {
+                max-width: 344px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            @include for-mobile {
+                max-width: 212px;
+            }
+        }
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            max-width: 573px;
+            height: 180px;
+            position: unset;
+            margin-bottom: 24px;
+        }
+        @include for-mobile {
+            max-width: 279px;
+            height: 382px;
+            flex-direction: column  ;
+        }
+        @include for-mobile {
+            margin-bottom: 24px;
+        }
+    }
+
+
+    //box2 section//..........
+
+
+    &__box2 {
+        position: absolute;
+        top: 300px;
+        text-align: center;
+        background-color: $secondary_color;
+        color: $white_color;
+        padding: 72px 48px 48px 48px;
+        border-radius: 8px;
+        left: 465px;
+        &__image {
+            @include for-mobile {
+                margin-bottom: 56px;
+            }
+        }
+        &__title {
+            font-family: $header_font_title;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+            margin: 56px 0 24px 0;
+            @include for-tablet {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0 0 16px 0;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 540px;
+            text-align: center;
+            color: $white_color;
+            max-width: 255px;
+            @include for-tablet {
+                max-width: 344px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            @include for-mobile {
+                max-width: 212px;
+            }
+        }
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            max-width: 573px;
+            height: 180px;
+            position: unset;
+            margin-bottom: 24px;
+        }
+        @include for-mobile {
+            max-width: 279px;
+            height: 382px;
+            flex-direction: column  ;
+        }
+        @include for-mobile {
+            margin-bottom: 24px;
+        }
+    }
+
+
+
+    
+    //box3 section//..........
+
+
+
+
+    &__box3 {
+        position: absolute;
+        top: 300px;
+        text-align: center;
+        background-color: $secondary_color;
+        color: $white_color;
+        padding: 72px 48px 48px 48px;
+        border-radius: 8px;
+        right: 100px;
+        height: 386px;
+        &__image {
+            @include for-mobile {
+                margin-bottom: 56px;
+            }
+        }
+        &__title {
+            font-family: $header_font_title;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+            margin: 56px 0 24px 0;
+            @include for-tablet {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0 0 16px 0;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 540px;
+            text-align: center;
+            color: $white_color;
+            max-width: 255px;
+            @include for-tablet {
+                max-width: 344px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            @include for-mobile {
+                max-width: 212px;
+            }
+        }
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            max-width: 573px;
+            height: 180px;
+            position: unset;
+        }
+        @include for-mobile {
+            max-width: 279px;
+            height: 382px;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+    }
+    @include for-mobile {
+        @include for-mobile {
+            height: 902px;
+        }
+    }
+}

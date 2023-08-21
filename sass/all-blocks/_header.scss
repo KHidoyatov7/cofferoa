@@ -1,0 +1,112 @@
+header {
+    position: relative;
+}
+body {
+    font-family: $main_font;
+    overflow-x: hidden;
+}
+.navbar {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    &__menu {
+        display: flex;
+        column-gap: 33px;
+        &__list {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.92px;
+            text-transform: uppercase;
+
+            @include for-mobile {
+                font-size: 24px;
+                font-weight: 900;
+                row-gap: 20px;
+            }
+        }
+        @include for-mobile {
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,0.19940476190476186) 20%, rgba(255,255,255,1) 64%);
+            row-gap: 30px;
+        }
+    }
+}
+.bg {
+    .hero {
+        background-image: url(../../images/header-images/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100wh;
+        @include for-tablet {
+            background-image: url(../../images/header-images/tablet-bg.jpg);
+        }
+        @include for-mobile {
+            background-image: url(../../images/header-images/mobilr-bg.jpg);
+        }
+        padding: 117px 85px;
+            &__box {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                &__h1 {
+                    font-family: $header_font_title;
+                    font-weight: 900;
+                    font-size: 72px;
+                    line-height: 72px;
+                    max-width: 450px;
+                    color: $white_color;
+                    @include for-tablet {
+                      font-size: 48px;
+                      line-height: 48px;
+                      max-width: 329px;
+                    }
+                    @include for-mobile{
+                        font-size: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+                }
+                &__text {
+                    font-weight: 400;
+                    margin: 32px 0 56px 0;
+                    font-size: 16px;
+                    line-height: 26px;
+                    max-width: 440px;
+                    color: $white_color;
+                    @include for-tablet {
+                        font-size: 15px;
+                        line-height: 25px;
+                        max-width: 398px;
+                    }
+                    @include for-mobile{
+                        text-align: center;
+                    }
+                }
+    
+            }
+            @include for-tablet {
+
+            }
+    }
+}
+button {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 25px;
+    width: 217px;
+    padding: 16px 31px;
+    background-color: $button_color;
+    color: $white_color;
+    font-family: $header_font_title;
+    border: none;
+    border-radius: 8px;
+}
